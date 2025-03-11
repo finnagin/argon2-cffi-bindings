@@ -51,7 +51,7 @@ jobs:
           CIBW_BEFORE_TEST_WINDOWS: >
             echo "%VSCMD_ARG_TGT_ARCH%" &&
             echo $env:VSCMD_ARG_TGT_ARCH &&
-            python -c "import os; print(os.environ.get("VSCMD_ARG_TGT_ARCH", ""))"
+            python -c "import os; print(os.environ.get('VSCMD_ARG_TGT_ARCH', ''))"
 
       - uses: actions/upload-artifact@v4
         with:
