@@ -15,13 +15,6 @@ windows = platform.system() == "Windows"
 
 # Try to detect cross-compilation.
 def _get_target_platform(tgt_arch, arch_flags, default):
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print(tgt_arch)
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     if tgt_arch != "":
         return tgt_arch
     flags = [f for f in arch_flags.split(" ") if f.strip() != ""]
